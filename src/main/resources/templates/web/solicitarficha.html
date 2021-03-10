@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org" xmlns:layout="http://wwww.ultraq.net.nz/thymeleaf/layout">
+<head>
+<title>Solicitar Ficha</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="img/icon.png" rel="icon">
+<script type="text/javascript" src="js/jquery-3.4.1.min"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<link href="style/estilo.css" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-light bg-light">
+			<span class="navbar-brand mb-0 h1">Solicitar Ficha</span> <a href="/"
+				class="btn btn-light">Voltar</a>
+		</nav>
+	</header>
+
+	<section>
+
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th scope="col">Especialidade</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="espe : ${espe}">
+
+					<td><span th:text="${espe.descricao}"></span></td>
+		
+					<td><button type="submit" class="btn btn-light"><a th:href="${#mvc.url('UC#cadsolicitacao').arg(0, espe.codigo).build()}" >Solicitar</a></button></td>
+				</tr>
+
+			</tbody>
+		</table>
+	</section>
+
+	<footer> </footer>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org" xmlns:layout="http://wwww.ultraq.net.nz/thymeleaf/layout">
+<head>
+<title>Pacientes Cadastrados</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="img/icon.png" rel="icon">
+<script type="text/javascript" src="js/jquery-3.4.1.min"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<link href="style/estilo.css" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-light bg-light">
+			<span class="navbar-brand mb-0 h1">Pacientes Cadastrados</span> <a href="/"
+				class="btn btn-light">Voltar</a>
+		</nav>
+	</header>
+
+	<section>
+
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th scope="col">Nome</th>
+					<th scope="col">CPF</th>
+				</tr>
+			</thead>
+			<tbody th:each="usuario : ${usuario}">
+				<tr>
+					<td><span th:text="${usuario.nome_completo}"></span></td>
+					<td><span th:text="${usuario.cpf}"></span></td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+nav.navbar {
+    text-align: center;
+}
+
+a.navbar-brand {
+    margin: auto;
+    color: white !important;
+}
+
+section.container {
+    padding-top: 20px;
+}
+
+button.btn.btn-light {
+    margin: auto;
+}
+
+form {
+    text-align: center;
+}
+
+.form-group {
+    text-align: left;
+}
+
+input.btn.btn-light{
+    color: darkred !important;
+}
+footer{
+	margin-top: 20px;
+}

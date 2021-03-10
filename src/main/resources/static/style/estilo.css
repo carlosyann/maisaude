@@ -1,0 +1,128 @@
+section.container {
+    padding: 0px 10px;
+}
+
+header{
+    margin-bottom: 30px;
+}
+
+span.badge.badge-pill {
+    height: 50px;
+    width: 50px;
+}
+
+.ficha {
+    padding-right:0px ;
+    padding-left:0px;
+    margin-bottom: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.ficha .row{
+    width: 100%;
+    margin: 0px;
+    padding: 16px;
+}
+
+.ficha .card {
+    border: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+.ficha .card-title{
+    font-size: 1.5em;
+}
+
+.ficha .card span{
+    font-size: 1em;
+}
+
+.ficha .ubs_nome{
+    display: block;
+}
+
+.badge-rosa{
+    background-color: pink;
+}
+
+.badge-purple{
+    background-color: purple;
+}
+
+.badge-lightgrey{
+    background-color: #C6C6C6;
+}
+
+.badge-lightlightgreen{
+    background-color: #D3E1AF;
+}
+
+.badge-lightgreen{
+    background-color: #BDD387;
+}
+
+.badge-green{
+    background-color: #8FAE2D;
+}
+
+.badge-darkgreen{
+    background-color: #3F9D2F;
+}
+
+footer{
+    margin-top: 20px;
+}
+.card-body {
+    padding: 0px 1.25rem;
+}
+.card{
+ flex-direction: row;
+}
+
+form {
+    text-align: center;
+}
+
+.form-group {
+    text-align: left;
+}
+
+input.btn.btn-light{
+    color: darkred !important;
+}
+
+.ubss{
+      text-align: center;
+}
+.ubss .card {
+    display: inline-block;
+	margin-bottom: 20px;
+}
+.ubss .card .card-body{
+    padding: 10px;
+}
+input.btn.btn-light{
+    color: darkred !important;
+}
+
+.ubs {
+    text-align: center; 
+
+}
+.ubs .card{
+  display: inline-block;
+  width: 80% !important;
+  margin-bottom: 20px;
+}
+.badge-pill {
+    padding-right: 0.6em;
+    padding-left: 0.6em;
+    padding-top: 1em;
+    border-radius: 10rem;
+}
+.btn-light {
+    color: darkred;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}

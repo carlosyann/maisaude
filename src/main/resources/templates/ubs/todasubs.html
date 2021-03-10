@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+	xmlns:layout="http://wwww.ultraq.net.nz/thymeleaf/layout">
+<head>
+<title>Editar UBS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="img/icon.png" rel="icon">
+<script type="text/javascript" src="js/jquery-3.4.1.min"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<link href="style/estilo.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-light bg-light">
+			<span class="navbar-brand mb-0 h1">Editar UBS</span>
+			<a href="/" class="btn btn-light">Voltar</a>
+		</nav>
+	</header>
+
+	<section>
+
+		<div class="card mb-1" th:each="ubs : ${ubs}">
+			<img class="card-img-top" style="width: 30rem" src="img/claricepereira.jpg"
+				alt="Imagem de capa do card">
+			<div class="card-body">
+				<h5 class="card-title"><a th:href = "${#mvc.url('UC#detalhesUbs').arg(0, ubs.id).build()}" ><span th:text="${ubs.nome}"></span></a></h5>
+				<b class="card-text">Localização:</b>
+				<p><span th:text="${ubs.localizacao}"></span></p>
+				<b class="card-text">Horário de Funcionamento:</b>
+				<p><span th:text="${ubs.funcionamento}"></span></p>
+				<b class="card-text">Descrição:</b>
+				<p><span th:text="${ubs.descricao}"></span></p>
+				
+			</div>
+		</div>
+	
+	</section>
+	
+</body>
+</html>

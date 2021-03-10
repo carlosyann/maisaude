@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org" xmlns:layout="http://wwww.ultraq.net.nz/thymeleaf/layout">
+<head>
+<title>Mais Saúde</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="UTF-8">
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="img/icon.png" rel="icon">
+	<link href="style/login.css" rel="stylesheet" >
+</head>
+
+<body>
+	<form name="login" class="form-signin" action="/login" method="post">
+		<img id="logo" class="mb-4" src="img/icone.png">
+		<input type="text" name="username" class="form-control" placeholder="Usuário">
+		<input type="password" name="password" class="form-control" placeholder="Senha">
+		<button type="submit" class="btn btn-lg btn-light btn-block">Entrar</button>
+		<a class="btn btn-primary" href="/cadastrarUsu">Cadastre-se</a>
+		
+<!--  		<input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}">  -->
+	</form>
+
+	<section class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card" style="width: 18rem;">
+					<img class="card-img-top" src="img/claricepereira.jpg"
+						alt="Card image cap">
+					<div class="card-body">
+						<h5 class="card-title">Clarice Pereira</h5>
+						<p class="card-text">
+							<b>Localização</b>
+						<p>Rua Francisco Costa Alecrim, S/N, COHAB - Lajes/RN.</p>
+						<b>Horário de Funcionamento</b>
+						<p>7:30 às 11:30 horas e 13:00 às 17:00 horas.</p>
+						<b>Especialidades Atendidas</b>
+						<p>Genicologista</p>
+						<p>Clínico Geral</p>
+						<p>Odontologista</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card" style="width: 18rem;">
+					<img class="card-img-top" src="img/luizlopes.jpg"
+						alt="Card image cap">
+					<div class="card-body">
+						<h5 class="card-title">Luiz Lopes</h5>
+						<p class="card-text">
+							<b>Localização</b>
+						<p>Avenida Ulisses Vale, 225, Centro – Lajes/RN</p>
+						<b>Horário de Funcionamento</b>
+						<p>7:30 às 11:30 horas e 13:00 às 17:00 horas.</p>
+						<b>Especialidades Atendidas</b>
+						<p>Genicologista</p>
+						<p>Clínico Geral</p>
+						<p>Odontologista</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card" style="width: 18rem;">
+					<img class="card-img-top" src="img/marianagomes.jpg"
+						alt="Card image cap">
+					<div class="card-body">
+						<h5 class="card-title">Mariana Gomes</h5>
+						<p class="card-text">
+							<b>Localização</b>
+						<p>Rua Inês Albuquerque, 80, Antonio de Melo – Lajes/RN</p>
+						<b>Horário de Funcionamento</b>
+						<p>7:30 às 11:30 horas e 13:00 às 17:00 horas.</p>
+						<b>Especialidades Atendidas</b>
+						<p>Genicologista</p>
+						<p>Clínico Geral</p>
+						<p>Odontologista</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+ 	
+</body>
+</html>

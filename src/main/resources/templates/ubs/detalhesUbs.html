@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+	xmlns:layout="http://wwww.ultraq.net.nz/thymeleaf/layout">
+<head>
+<title>Detalhes</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="img/icon.png" rel="icon">
+<script type="text/javascript" src="js/jquery-3.4.1.min"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<link href="style/estilo.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-light bg-light">
+			<span class="navbar-brand mb-0 h1">UBS - Detalhes</span>
+			<a href="/" class="btn btn-light">Voltar</a>
+		</nav>
+	</header>
+
+	<section>
+
+		<div class="card mb-1" th:each="ubs : ${ubs}">
+			
+			<div class="card-body">
+				<h5 class="card-title"><span th:text="${ubs.nome}"></span></h5>	
+			</div>
+		</div>
+			<form method="post">
+		<div class="form-row">
+			<div class="form-group col-md-6">
+				<label>Descrição:</label> <input type="text" value="" name="descricao" class="form-control" placeholder="Digite aqui...">
+					<label>Data:</label> <input type="text" value="" name="dataA" class="form-control" placeholder="Digite aqui...">
+			</div>
+		</div>
+		<button type="submit" class="btn btn-primary">Adicionar</button>
+	</form>
+	<div class="card-body" th:each="espe : ${espe}">
+				<h5 class="card-title"><span th:text="${espe.descricao}"></span></h5>
+				<button class="btn btn-danger"><a th:href="${#mvc.url('UC#deletarEsp').arg(0, espe.codigo).build()}">Deletar</a></button>	 
+	</div>
+	
+	</section>
+	
+</body>
+</html>
